@@ -1,26 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="sw">
 <head>
-    <title>Essau Brand</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSAU BRAND</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Urembo wa Picha */
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%; /* Inafanya picha iwe mduara */
+            border: 4px solid #00ff00;
+            margin-bottom: 20px;
+            object-fit: cover; /* Inazuia picha isijivute vibaya */
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 10px 0;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        /* Sehemu ya Mitandao */
+        .links {
+            margin-top: 25px;
+        }
+
+        .links a {
+            color: black;
+            background-color: #00ff00;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .links a:hover {
+            background-color: white;
+            transform: scale(1.1);
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background: none;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
 </head>
 <body>
-    <div class="box">
-        <h1>ESSAU</h1>
-        <p>Expert in Parrot OS & Cybersecurity</p>
-        <button>Wasiliyana Nami</button>
+
+    <img src="picha.jpg" alt="Essau Profile" class="profile-img">
+
+    <h1>ESSAU</h1>
+
+    <div class="links">
+        <a href="https://wa.me/255747163749" target="_blank">WhatsApp</a>
+        
+        <a href="https://instagram.com/pande.360" target="_blank">Instagram</a>
     </div>
 
-    <script>
-    const btn = document.querySelector('button');
-    const h1 = document.querySelector('h1');
+    <button id="colorBtn">Bofya Kubadili Rangi</button>
 
-    btn.addEventListener('click', () => {
-        const colors = ['#00ff00', '#ff0000', '#0000ff', '#ffff00', '#ff00ff', '#ffffff'];
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        h1.style.color = randomColor;
-        h1.style.textShadow = `0 0 30px ${randomColor}`;
-    });
-</script>
+    <script>
+        const btn = document.getElementById('colorBtn');
+        const h1 = document.querySelector('h1');
+
+        btn.addEventListener('click', () => {
+            const colors = ['#00ff00', '#ff0000', '#0000ff', '#ffff00', '#ff00ff', '#ffffff'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            h1.style.color = randomColor;
+            h1.style.textShadow = `0 0 30px ${randomColor}`;
+            btn.style.borderColor = randomColor;
+            btn.style.color = randomColor;
+        });
+    </script>
+
 </body>
 </html>
