@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Essau Brand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>ESSAU</h1>
+        <p>Expert in Parrot OS & Cybersecurity</p>
+        <button>Wasiliyana Nami</button>
+    </div>
+
+    <script>
+    const btn = document.querySelector('button');
+    const h1 = document.querySelector('h1');
+
+    btn.addEventListener('click', () => {
+        const colors = ['#00ff00', '#ff0000', '#0000ff', '#ffff00', '#ff00ff', '#ffffff'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        h1.style.color = randomColor;
+        h1.style.textShadow = `0 0 30px ${randomColor}`;
+    });
+</script>
+</body>
+</html>
