@@ -3,87 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESSAU HACKER BRAND</title>
+    <title>ESSAU BRAND - FULL BACKGROUND</title>
     <style>
         body {
-            background-color: #000;
+            margin: 0;
+            padding: 0;
+            /* HAPA NDIPO PICHA INAPOWEKWA KAMA BACKGROUND */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('picha.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
             color: #00ff00;
             font-family: 'Courier New', monospace;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            overflow-x: hidden;
+            overflow: hidden;
+            text-align: center;
         }
 
-        /* Maneno yanayotembea juu */
-        .hacker-bar {
-            width: 100%;
-            background: #003300;
-            padding: 10px 0;
-            position: fixed;
-            top: 0;
-            font-weight: bold;
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px #00ff00;
         }
 
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #00ff00;
-            margin-top: 80px;
-            box-shadow: 0 0 15px #00ff00;
-        }
-
-        h1 { font-size: 3rem; text-shadow: 2px 2px 10px #00ff00; }
-
-        /* Muziki Player */
         .music-box {
-            margin: 20px 0;
-            background: #111;
-            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
             border: 1px solid #00ff00;
             border-radius: 10px;
+            backdrop-filter: blur(5px);
+            margin: 20px 0;
         }
 
         .links a {
             color: black;
             background: #00ff00;
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 15px 30px;
+            margin: 10px;
             display: inline-block;
             border-radius: 5px;
             font-weight: bold;
+            box-shadow: 0 0 10px #00ff00;
         }
 
-        /* Maneno ya chini yanayotembea */
         marquee {
-            width: 80%;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            color: #fff;
-            background: #004400;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 51, 0, 0.8);
+            color: white;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="hacker-bar">
-        <marquee scrollamount="10">WARNING: SYSTEM SECURED BY ESSAU HACKER... ENCRYPTING DATA... ACCESS GRANTED...</marquee>
-    </div>
-
-    <img src="picha.jpg" alt="Essau" class="profile-img">
-
-    <h1>ESSAU BRAND</h1>
+    <h1>ESSAU HACKER BRAND</h1>
 
     <div class="music-box">
-        <p>Listen to My Vibes:</p>
+        <p>🎵 PLAYING MY VIBES</p>
         <audio controls>
             <source src="mziki.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
         </audio>
     </div>
 
@@ -92,7 +80,7 @@
         <a href="https://instagram.com/pande.360">Instagram</a>
     </div>
 
-    <marquee direction="right" scrollamount="5">Developing the future... One line of code at a time... Essau is live!</marquee>
+    <marquee scrollamount="10">ACCESS GRANTED... SYSTEM SECURED BY ESSAU... DATABASE ENCRYPTED... WELCOME TO THE FUTURE...</marquee>
 
 </body>
 </html>
