@@ -3,64 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESSAU BRAND - FULL BACKGROUND</title>
+    <title>ESSAU BRAND - PRO LOOK</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            /* HAPA NDIPO PICHA INAPOWEKWA KAMA BACKGROUND */
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('picha.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('picha.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            background-repeat: no-repeat;
-            
-            color: #00ff00;
-            font-family: 'Courier New', monospace;
+            color: white; /* Rangi ya maandishi sasa ni nyeupe */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            overflow: hidden;
+            justify-content: space-between; /* Inatenganisha vitu juu na chini */
             text-align: center;
         }
 
         h1 {
-            font-size: 3.5rem;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            text-shadow: 0 0 20px #00ff00;
+            font-size: 2.5rem;
+            margin-top: 50px; /* Inasukuma jina juu kabisa */
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 10px;
         }
 
+        /* Box la Muziki kuwa Transparent (Kioo) */
         .music-box {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 15px;
-            border: 1px solid #00ff00;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.1); /* Inaruhusu picha kuonekana kwa nyuma */
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(15px); /* Hii ndio inaleta muonekano wa kioo */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            width: 80%;
+            max-width: 400px;
         }
 
         .links a {
-            color: black;
-            background: #00ff00;
+            color: #000;
+            background: #fff;
             text-decoration: none;
-            padding: 15px 30px;
+            padding: 12px 25px;
             margin: 10px;
             display: inline-block;
-            border-radius: 5px;
+            border-radius: 50px;
             font-weight: bold;
-            box-shadow: 0 0 10px #00ff00;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            background: #00ff00;
+            transform: translateY(-5px);
         }
 
         marquee {
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-            background: rgba(0, 51, 0, 0.8);
-            color: white;
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ff00;
             padding: 10px 0;
+            font-family: 'Courier New', monospace;
         }
     </style>
 </head>
@@ -69,18 +73,18 @@
     <h1>ESSAU HACKER BRAND</h1>
 
     <div class="music-box">
-        <p>🎵 PLAYING MY VIBES</p>
-        <audio controls>
+        <p style="margin-top:0;">🎵 MY PLAYLIST</p>
+        <audio controls style="width: 100%;">
             <source src="mziki.mp3" type="audio/mpeg">
         </audio>
+        
+        <div class="links">
+            <a href="https://wa.me/255747163749">WhatsApp</a>
+            <a href="https://instagram.com/pande.360">Instagram</a>
+        </div>
     </div>
 
-    <div class="links">
-        <a href="https://wa.me/255747163749">WhatsApp</a>
-        <a href="https://instagram.com/pande.360">Instagram</a>
-    </div>
-
-    <marquee scrollamount="10">ACCESS GRANTED... SYSTEM SECURED BY ESSAU... DATABASE ENCRYPTED... WELCOME TO THE FUTURE...</marquee>
+    <marquee scrollamount="8">SERVER STATUS: ONLINE | ENCRYPTION: ACTIVE | DEVELOPER: ESSAU | WELCOME TO THE DARK SIDE...</marquee>
 
 </body>
 </html>
