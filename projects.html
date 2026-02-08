@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROJECTS | ESSAU BRAND</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('picha.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        h1 { color: #00ff00; border-bottom: 2px solid #00ff00; margin-bottom: 30px; text-transform: uppercase; }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: 0.4s;
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #00ff00;
+            background: rgba(0, 255, 0, 0.05);
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+        }
+
+        .card h3 { color: #00ff00; margin-top: 0; font-size: 1.2rem; }
+        .card p { font-size: 0.85rem; color: #ddd; line-height: 1.5; }
+        .status { font-size: 0.7rem; color: #00ff00; font-weight: bold; text-transform: uppercase; }
+
+        .back-btn {
+            margin-top: 50px;
+            color: black;
+            background: #00ff00;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover { background: white; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <h1>MY PROJECTS ARCHIVE</h1>
+
+    <div class="project-grid">
+        <div class="card">
+            <span class="status">[ Completed ]</span>
+            <h3>01. Personal Portfolio</h3>
+            <p>Developed a responsive, hacker-themed website using HTML5, CSS3, and JavaScript Matrix effects.</p>
+        </div>
+
+        <div class="card">
+            <span class="status">[ Active ]</span>
+            <h3>02. Linux SysAdmin</h3>
+            <p>Setting up and securing Debian-based systems (Parrot OS) for development and security auditing.</p>
+        </div>
+
+        <div class="card">
+            <span class="status">[ In Progress ]</span>
+            <h3>03. Network Scanner</h3>
+            <p>Using Nmap and other tools to analyze network vulnerabilities and improve home network security.</p>
+        </div>
+
+        <div class="card">
+            <span class="status">[ Research ]</span>
+            <h3>04. Python Scripting</h3>
+            <p>Writing basic automation scripts in Python to handle repetitive file management tasks.</p>
+        </div>
+
+        <div class="card">
+            <span class="status">[ Completed ]</span>
+            <h3>05. OS Customization</h3>
+            <p>Built a custom workflow in Parrot OS with specialized shortcuts and terminal themes for efficiency.</p>
+        </div>
+
+        <div class="card">
+            <span class="status">[ Active ]</span>
+            <h3>06. Web Security</h3>
+            <p>Learning the fundamentals of OWASP Top 10 to build websites that are resistant to common attacks.</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-btn">GO BACK HOME</a>
+
+</body>
+</html>
