@@ -31,42 +31,46 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.05);
-            /* Huu hapa ni mwanga wa kwanza (kijani hafifu) */
-            border: 1px solid rgba(0, 255, 0, 0.4); 
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #00ff00; 
             padding: 25px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
             transition: 0.4s;
             text-align: left;
-            /* Mwanga wa nje wa box */
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2); 
         }
 
         .card:hover {
             transform: translateY(-10px);
-            border-color: #00ff00;
             background: rgba(0, 255, 0, 0.1);
-            /* Mwanga mkali zaidi mtu akigusa box */
-            box-shadow: 0 0 25px rgba(0, 255, 0, 0.5);
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.5); 
         }
 
         .card h3 { 
-            color: #00ff00; 
+            color: #ffffff; 
             margin-top: 0; 
-            font-size: 1.2rem;
-            /* Mwanga kwenye maandishi ya kichwa cha habari */
-            text-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
+            font-size: 1.3rem;
+            text-shadow: 0 0 8px rgba(0, 255, 0, 0.8); 
+            border-bottom: 1px solid rgba(0, 255, 0, 0.3);
+            padding-bottom: 5px;
+        }
+
+        .card p { 
+            font-size: 0.95rem; 
+            color: #ffffff; 
+            line-height: 1.6; 
+            margin-top: 15px;
         }
 
         .status { 
-            font-size: 0.7rem; 
+            font-size: 0.75rem; 
             color: #00ff00; 
             font-weight: bold; 
             text-transform: uppercase;
             letter-spacing: 2px;
-            /* Mwanga kwenye neno "Completed" au "Active" */
-            text-shadow: 0 0 5px #00ff00;
+            display: block;
+            margin-bottom: 5px;
         }
 
         .back-btn:hover { background: white; transform: scale(1.05); }
